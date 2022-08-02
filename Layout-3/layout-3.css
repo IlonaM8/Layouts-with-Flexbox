@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+.flex-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    width: 5rem;
+    height: 100vh;
+    background-color: pink;
+   
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    width: 100vh;
+    width: 25%;
+    background-color: rgb(245, 245, 189);
+}
+main {
+    height: 100vh;
+    width: calc( 100% - 5rem - 25%);
+    background-color: aliceblue;
+    position: relative;
+   
+}
+
+
+/* dentro header */ 
+
+.button {
+    width: 40px;
+    height: 40px;
+    background-color: lightgrey;
+    margin-top: 20px;    
+
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: aquamarine;
+    margin-bottom: 20px;
+}
+
+/* dentro main */
+
+
+
+.box-input {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    border-bottom: 1px grey solid;
+}
+
+.input {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(145, 238, 238);
+
+}
+   
+
+
+
+@media screen  and (max-width: 576px){
+    aside {
+        display: none;
+    }
+    
+
+    main {
+        height: calc(100% - 4rem);
+        width: 100vw;
+        background-color: aliceblue;
+    }
+
+    .box-input {
+        
+        border-bottom: none;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 4rem;
+        
+    }
+
+    .circle {
+        display: none;
+    }
+
+    .circle-2 {
+        right: 20px;
+        bottom: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+       background-color: aquamarine;
+       position: absolute;
+
+    
+    }
+
+    .button {
+        margin-bottom: 20px;
+        margin-left: 20px;
+    }
+
+    
+}
