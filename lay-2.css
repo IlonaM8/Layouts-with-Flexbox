@@ -154,3 +154,14 @@ header {
     }
     
 }
+
+@media screen and (max-width: 1024px){
+
+    .main-area {
+        width: 400px;
+        height: 200px;
+    }
+
+    
+    
+}
