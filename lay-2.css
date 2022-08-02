@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    height: 100vh;
+
+}
+
+.main-content {
+    width: 100%;
+    /* width: calc(100% - 20rem); */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid rgb(169, 154, 15); */
+    position: relative;
+}
+
+aside {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    width: 20rem;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+.div-blue {
+    width: 200px;
+    height: 100px;
+    background-color: rgb(166, 166, 244);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    width: 100%;
+    height: 5rem;
+    background-color: rgb(191, 220, 244);
+}
+
+.button {
+    width: 40px;
+    height: 30px;
+    background-color: grey;
+}
+
+.button2 {
+    width: 100px;
+    height: 50px;
+    background-color: grey;
+
+}
+
+.main-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 800px;
+    height: 400px;
+    background-color: pink;
+}
+
+.circle-d {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: pink;
+    position: absolute;
+    top: 95%;
+    right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    aside {
+        display: none;
+    }
+
+    
+
+    .div-blue-2 {
+        width: 80px;
+        height: 40px;
+        margin-left: 20px;
+        background-color: rgb(166, 166, 244);
+
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    main {
+      justify-content: flex-start;
+    }
+
+    .main-area {
+        width: 400px;
+        height: 200px;
+    }
+
+    .circle-d {
+        display: none;
+    }
+
+    .circle-m {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        background-color: rgb(249, 199, 207);
+        position: absolute;
+        top: 90%;
+        left: 20px;
+    }
+    
+}
