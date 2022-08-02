@@ -5,7 +5,7 @@
 }
 
 .flex-container {
-    display: flex;
+    display: flex; 
 }
 
 main {
@@ -28,22 +28,23 @@ aside {
 .main-content {
     width: 600px;
     height: 400px;
-    /* border:  2px solid red; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 40px;
-    
-
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.4rem;
     padding-top: 50px;
     text-align: center;
     /* padding-left: 20px;
     padding-right: 20px; */
+}
+
+h2 {
+    font-size: 1.4rem;
 }
 
 p {
@@ -66,11 +67,14 @@ aside {
 }
 
 header {
-    padding-top: 40px;
+    /* border: 2px solid red; */
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-right: 20px;
     padding-left: 20px;
     display: flex;
-  justify-content: space-between;
+   justify-content: space-between;
+   align-items: center;
 
 }
 
@@ -88,23 +92,24 @@ header {
     align-items: center;
     justify-content: center;
     gap: 40px;
+    padding-top: 80px;
 }
 
 .form {
-    width: 250px;
+    width: 200px;
     height: 20px;
     background-color: white;
 }
 
 .button-square {
-    width: 250px;
+    width: 200px;
     height: 30px;
     background-color: rgb(121, 228, 228);
-    
-
 }
 
-@media screen  and (max-width: 720px){
+
+
+@media screen  and (max-width: 576px){
     .flex-container {
         flex-direction: column;
     }
@@ -138,3 +143,33 @@ header {
    
     
 }
+
+@media screen and (min-width: 577px) and (max-width: 930px){
+    h1 {
+        color: aquamarine;
+    }
+    .form {
+        width: 200px;
+        height: 20px;
+        background-color: white;
+    }
+    
+    .main-content {
+        font-size: 12px;
+        width: 350px;
+        height: 400px;
+    }
+
+    .form {
+        width: 150px;
+        height: 20px;
+        background-color: white;
+    }
+
+    .button-square {
+        width: 150px;
+        height: 30px;
+        background-color: rgb(121, 228, 228);
+    }
+}
+
