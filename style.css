@@ -39,8 +39,15 @@ main {
  
     width: 150px;
     height: 150px;
-    background-color: rgb(238, 222, 253);
+    background-color: rgb(246, 246, 208);
+    /* background-color: rgb(238, 222, 253); */
 }
+
+.button {
+    background-color: rgb(227, 143, 246);
+}
+
+
 
 a {
     text-decoration: none;
@@ -53,8 +60,13 @@ a {
 }
 
 a:hover {
-    background-color: darkred;
+    background-color: rgb(222, 39, 39);
 }
+
+.button:hover {
+    background-color: rgb(132, 62, 198);
+}
+
 @media screen  and (max-width: 720px){
     .layout {
         display: flex;
